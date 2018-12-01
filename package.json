@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/anthonyfelts/goalgetter#readme",
   "dependencies": {
-    "bcrypt": "^3.0.2"
+    "bcrypt": "^3.0.2",
+    "bootstrap": "^4.1.3"
   }
 }
