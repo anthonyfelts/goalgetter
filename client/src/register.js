@@ -6,11 +6,16 @@ function validateForm() {
         var pw2 = document.loginform.pword2.value;
  	//Gotta somehow verify username not taken       
 
-//	if ( un == username) {
+	if( un == "" || pw == "" || pw2 == "") {
+		alert ("You must fill in all the fields.");
+		return false;
+	}
+
+//	else if ( un == username) {
 //          	alert ("Username already taken.");
 //	    	return false;
 //      }
-        
+
 	else if ( pw != pw2) {
 	    	alert ("Passwords do not match.");
             	return false;
