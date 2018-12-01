@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Goal Getter</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-nav">
+        <header class="text-center"><h1>Goal Getter</h1></header>
+      </div>
+      <div>
+        <form form-inline>
+          <div class="form-group row task-form">
+            <label class="task-label col-12 col-md-2 col-form-label" for="task"
+              >Enter new goal!</label
+            >
+            <div class="task-input col-12 col-md-8">
+              <input
+                type="text"
+                class="form-control"
+                id="task"
+                aria-describedby="taskInsert"
+                placeholder="Enter goal"
+              />
+            </div>
+            <div class="col-12 col-md-2">
+              <button
+                onclick="addGoal()"
+                type="submit"
+                class="task-button btn btn-primary"
+              >
+                New Goal
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

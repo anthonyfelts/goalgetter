@@ -1,0 +1,41 @@
+/* body,
+html {
+  height: 100vh;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  padding: 5% 10%;
+}
+h1 {
+  padding-bottom: 1rem;
+  border-bottom: 3px solid white;
+}
+.content {
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .task-form {
+    text-align: center;
+  }
+
+  .task-button {
+    padding-top: 15px;
+  }
+}
