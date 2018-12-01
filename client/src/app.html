@@ -23,29 +23,50 @@
     <title>Goal Getter</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" method="POST">
       <div class="main-nav">
         <header class="text-center"><h1>Goal Getter</h1></header>
       </div>
       <div>
-        <form form-inline id="app-form">
+        <form id="app-form" method="POST">
           <div class="form-group row task-form">
-            <label class="task-label col-12 col-md-2 col-form-label" for="goal"
+            <label class="task-label col-12 col-form-label" for="goal"
               >Enter new goal!</label
             >
-            <div class="task-input col-12 col-md-8">
-              <input
-                type="text"
-                class="form-control"
-                id="goal"
-                aria-describedby="taskInsert"
-                placeholder="Enter goal"
-              />
+            <div class="row">
+              <div class="task-input col-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  aria-describedby="taskInsert"
+                  placeholder="Enter goal"
+                />
+              </div>
+              <div class="task-input col-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="desc"
+                  aria-describedby="taskInsert"
+                  placeholder="Enter desc"
+                />
+              </div>
+              <div class="task-input col-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="time"
+                  aria-describedby="taskInsert"
+                  placeholder="Enter time"
+                />
+              </div>
             </div>
-            <div class="col-12 col-md-2">
+
+            <div class="col-12">
               <button
                 onclick="addGoal()"
-                type="submit"
+                type="button"
                 class="task-button btn btn-primary"
               >
                 New Goal
@@ -54,6 +75,7 @@
           </div>
         </form>
       </div>
+      <div id="result"></div>
     </div>
     <script src="app.js"></script>
   </body>
