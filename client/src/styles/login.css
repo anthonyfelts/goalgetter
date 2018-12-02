@@ -8,3 +8,9 @@ div{
 	padding-top: 5px;
 	padding-bottom: 10px;
 }
+
+input {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
