@@ -1,11 +1,15 @@
 body{
-	background: linear-gradient(#0254db,black) fixed;
+	background: linear-gradient(#00173d,black) fixed;
 	text-align:center;
 }
 
 div{
 	padding-top: 5px;
 	padding-bottom: 10px;
+}
+
+.myhead {
+	color: white;
 }
 
 input:hover{
