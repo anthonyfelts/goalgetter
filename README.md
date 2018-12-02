@@ -1,3 +1,3 @@
 # preCruzHacks
 
-This is the project for the 2018 December 1 PreCruzHacks 2018.
+This is a goal getting website, designed to motivate you to reach your goals.
