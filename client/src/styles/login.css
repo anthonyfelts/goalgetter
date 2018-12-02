@@ -1,12 +1,8 @@
 body{
-	background: linear-gradient(grey, #23788A) fixed;
-	/*
-	background-color:darkgrey;
-	*/
+	background: linear-gradient(#0254db,black) fixed;
 	font-family:“Trebuchet MS”, Verdana, Arial, serif; 
 	text-align:center;
 }
-
 div{
 	padding-top: 5px;
 	padding-bottom: 10px;
