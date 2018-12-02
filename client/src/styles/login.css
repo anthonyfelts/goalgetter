@@ -1,20 +1,10 @@
 body{
+	background-color:darkgrey;
 	font-family:“Trebuchet MS”, Verdana, Arial, serif; 
 	text-align:center;
 }
 
-name{
-
-}
-
-textbox{
-
-}
-
-button{
-
-}
-
-link{
-
+div{
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
