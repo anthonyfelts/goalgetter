@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <title>Goal Getter</title>
+  </head>
+  <body>
+    <div class="container" method="POST">
+      <div class="main-nav">
+        <header class="text-center"><h1>Goal Getter</h1></header>
+      </div>
+      <div>
+        <form id="app-form" method="POST">
+          <div class="form-group row task-form">
+            <label class="task-label col-12 col-form-label" for="goal"
+              >Enter new goal!</label
+            >
+            <div class="row">
+              <div class="task-input col-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  aria-describedby="taskInsert"
+                  placeholder="Enter goal"
+                />
+              </div>
+              <div class="task-input col-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="desc"
+                  aria-describedby="taskInsert"
+                  placeholder="Enter desc"
+                />
+              </div>
+              <div class="task-input col-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="time"
+                  aria-describedby="taskInsert"
+                  placeholder="Enter time"
+                />
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button
+                onclick="addGoal()"
+                type="button"
+                class="task-button btn btn-primary"
+              >
+                New Goal
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
