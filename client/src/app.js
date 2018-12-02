@@ -11,7 +11,7 @@ document.onkeypress = function(e) {
 };
 
 function addGoal() {
-  const goal = document.getElementById("goal").value;
+  const goal = document.getElementById("title").value;
   const list = document.createElement("p");
   const text = document.createTextNode(goal);
   list.appendChild(text);

@@ -18,11 +18,6 @@ class User(Document):
     timeCompleted = ListField(FloatField())
     status = ListField(IntField)
 
-
-
-
-
-
 @app.route('/')
 def index():
     return render_template('client.html')
