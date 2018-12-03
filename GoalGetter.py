@@ -1,13 +1,14 @@
 from flask import *
 from flask_bootstrap import *
 from mongoengine import *
+from pw import *
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
 
 
-connect(db="goalgetterdb", username="tfoss", password="123456a",
-        host="mongodb://tfoss:123456a@ds153815.mlab.com:53815/goalgetterdb")
+connect(db="goalgetterdb", username="tfoss", password=pw_,
+        host=host_)
 
 class User(Document):
     userName = StringField(required=True, max_length=200)
